@@ -16,7 +16,7 @@
         .getElementById("fetch-button")
         .addEventListener("click", async () => {
           try {
-            const response = await fetch("http://localhost:8080/api/message");
+            const response = await fetch("/api/message");
             const data = await response.json();
             document.getElementById("response-message").textContent =
               data.message;
